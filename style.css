@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600&display=swap');
+
+:root{
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    font-size: 62.5%;
+}
+/* ****************************************************RESET************************************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* *************************************LAYOUT******************************************************** */
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    
+}
+/* ************************************************HEADER********************************************* */
+header{
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgb(255, 255, 255)) ,url(./images/bg-header-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+header img{
+    width: 6.5em;
+    margin: 5em 0 3em;
+}
+header h1{
+    font-size: 2.5em;
+    color: var(--Dark-Grayish-Blue);
+}
+.Paragraph{
+    width: 48%;
+    margin: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+    padding: 1em 0 2em;
+}
+.downloadBtns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.downloadBtns a{
+    padding: 1.3rem 3rem;
+    box-shadow: 0 0 10px hsl(201, 11%, 66%);
+    border-radius: 5rem;
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.downloadBtns .blueBtn{
+    background-color: var(--Light-Blue);
+}
+.downloadBtns a:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 10px var(--Dark-Grayish-Blue);
+}
+/* //////////////////////////////////////////////////////// */
+.page2{
+    margin-top: 8em;
+    text-align: center;
+}
+.sub-titles{
+    font-size: 2.95rem;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.flexContainerPage2{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 5em 0 0 ;
+    position: relative;
+    right: 2em;
+    
+}
+.flexContainerPage2 img{
+    width: 50%;
+
+}
+.details{
+    text-align: left;
+    padding-top: 1.6em;
+    width: 25%;
+    margin-left: 8em;
+    align-self: flex-start;
+}
+.details li{
+    padding: 1.4em 0;
+}
+.details li h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--Dark-Grayish-Blue);
+    padding: 0.8rem 0;
+}
+.details li p{
+color: var(--Grayish-Blue);
+line-height: 1.5;
+}
+/* *************************************************************** */
+.page3{
+    padding-top: 8em;
+    text-align: center;
+}
+.page3 img{
+    width: 65%;
+}
+/* **************************************************************** */
+.page4{
+    padding-top: 3em;
+    text-align: center;
+}
+.gridcontainerPage4{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1.5em;
+}
+.sectionPage4 .img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+.sectionPage4 .img img{
+    width: 40px;
+}
+.sectionPage4 h4{
+    font-size: 2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.sectionPage4 p{
+    color: var(--Grayish-Blue);
+    padding-top: 2rem;
+    line-height: 1.5;
+}
+.clientLogos{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(5,1fr);
+    margin: auto;
+    padding:8em 0 10em;
+}
+/* ********************************************************************* */
+.page5{
+    text-align: center;
+}
+/* ************************************************** */
+footer{
+    background-color: rgba(170, 170, 170, 0.116);
+    margin-top: 8em;
+    text-align: center;
+}
+.footer{
+  
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+    margin: auto;
+    align-items: center;
+    min-height:30vh ;
+}
+.footer img{
+    width: 60px;
+}
+.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 5em;
+}
+.navlinks a{
+    text-align: left;
+    width: 180px;
+    padding: 0.8em 0;
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+}
+.navlinks a:hover{
+    text-decoration: underline;
+}
+/* ********************************************************** */
+.socialmeia a i{
+    font-size: 30px;
+    color: var(--Dark-Grayish-Blue);
+    padding: 0.3em;
+}
